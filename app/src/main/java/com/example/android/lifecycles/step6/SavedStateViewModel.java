@@ -21,11 +21,9 @@ import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.SavedStateHandle;
 import androidx.lifecycle.ViewModel;
 
-import java.sql.Savepoint;
 
 public class SavedStateViewModel extends ViewModel {
     private SavedStateHandle mState;
-    private MutableLiveData<String> name = new MutableLiveData<>();
     private static final String NAME_KEY = "name";
 
     public SavedStateViewModel(SavedStateHandle savedStateHandle){
